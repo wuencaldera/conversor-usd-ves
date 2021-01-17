@@ -1,39 +1,36 @@
 encabezado = """Conversor de USD a VES
-
+ 
 Si quieres calcular USD a VES, elige 1
 Si quieres calcular VES a USD, elige 2
-
-Elige una opción : """
-
+ 
+Elige una opción: """
+ 
 moneda = float(input(encabezado))
-
+ 
 #Paralelo promedio es igual a pl#
-valor_pl = 1097513.38
-
+valor_pl = 1618580.10
+ 
 #Banco Central es igual a bcv#
-valor_bcv = 1084350.92
-
+valor_bcv = 1500315.97
+ 
 #Zelle es igual a z#
-valor_z = 1040000
-
+valor_z = 1530000
+ 
 #Banesco Panama es igual a bp#
 valor_bp = valor_z
-
+ 
 #PayPal es igual a pp#
-valor_pp = 949300
-
+valor_pp = 1395350
+ 
 #Uphold es igual a uh#
-valor_uh = 983200
-
+valor_uh = 1445150
+ 
 #Skrill es igual a sk#
-valor_sk = 965950
-
+valor_sk = 1419800
+ 
 #Amazon Gift Card es igual a agc#
-valor_agc = 933200
-
-#XPAY es igual a xp#
-valor_xp = 948632
-
+valor_agc = 1371700
+ 
 if moneda == 1:
   opciones = """
   Para tasa Promedio de Dólares Paralelos, elige 1
@@ -44,18 +41,17 @@ if moneda == 1:
   Para tasa de Uphold, elige 6
   Para tasa de Skrill, elige 7
   Para tasa de Amazon Gift Card, elige 8
-  Para tasa de XPAY, elige 9
-
+ 
   Elige una opción: """
   tipo_usd = float(input(opciones))
-
-  def usd_ves(monto_usd, tasa):
-    monto_usd = float(input("""
-    Agregue el monto en USD: """))
-    monto_pl = monto_usd * tasa
+ 
+  monto_usd = float(input("""
+  Agregue el monto en USD: """))
+  def usd_ves(monto, tasa):
+    monto_pl= monto_usd * tasa
     print("""
     Tienes un total de Bs.S """ + str(round(monto_pl, 2)))
-
+  
   if tipo_usd == 1:
     usd_ves(monto_usd, valor_pl)
   elif tipo_usd == 2:
@@ -72,12 +68,10 @@ if moneda == 1:
     usd_ves(monto_usd, valor_sk)
   elif tipo_usd == 8:
     usd_ves(monto_usd, valor_agc)
-  elif tipo_usd == 9:
-    usd_ves(monto_usd, valor_xp)
   else:
     print("""
     Opción incorrecta""")
-
+ 
 elif moneda == 2:
   monto_ves = float(input("""
   Agregue el monto en Bs.S: """))
