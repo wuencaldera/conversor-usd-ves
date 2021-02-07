@@ -88,5 +88,3 @@ elif moneda == 2:
   print("Tasa de XPAY: $" + str(round(monto_ves / valor_xp, 2)) + " USD")
 else:
   print("""Opción incorrecta""")
-  
-$ python main.py
