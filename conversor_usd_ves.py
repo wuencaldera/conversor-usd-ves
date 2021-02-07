@@ -7,29 +7,29 @@ Elige una opción: """
  
 moneda = float(input(encabezado))
  
-#Paralelo promedio es igual a pl#
-valor_pl = 1618580.10
+#Paralelo promedio es igual a pl
+valor_pl = 1790271.69
  
-#Banco Central es igual a bcv#
-valor_bcv = 1500315.97
+#Banco Central es igual a bcv
+valor_bcv = 1828405.50
  
-#Zelle es igual a z#
-valor_z = 1530000
+#Zelle es igual a z
+valor_z = 1650000
  
-#Banesco Panama es igual a bp#
+#Banesco Panama es igual a bp
 valor_bp = valor_z
  
-#PayPal es igual a pp#
-valor_pp = 1395350
+#PayPal es igual a pp
+valor_pp = 1543400
  
-#Uphold es igual a uh#
-valor_uh = 1445150
+#Uphold es igual a uh
+valor_uh = 1598450
  
-#Skrill es igual a sk#
-valor_sk = 1419800
+#Skrill es igual a sk
+valor_sk = 1570400
  
-#Amazon Gift Card es igual a agc#
-valor_agc = 1371700
+#Amazon Gift Card es igual a agc
+valor_agc = 1517200
  
 if moneda == 1:
   opciones = """
